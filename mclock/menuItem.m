@@ -18,8 +18,8 @@
         // Initialization code here.
         [[NSUserDefaults standardUserDefaults] registerDefaults:    
          [NSDictionary dictionaryWithObjectsAndKeys:     
-          @"IST", kZoneString,     
-          @"h:mm a", kDisplayFormatString,
+          @"UTC", kZoneString,     
+          @"HH:mm:ss", kDisplayFormatString,
           [NSNumber numberWithBool:1], kDisplayZonePrefix,
           kDisplayZoneNone, kDisplayZoneByNameOptionSelected,
           nil]];
@@ -76,7 +76,7 @@
     [self reload:nil];
     
     
-    updateTimer =[NSTimer scheduledTimerWithTimeInterval:60.0
+    updateTimer =[NSTimer scheduledTimerWithTimeInterval:0.33
                                      target:self
                                    selector:@selector(updateLabel:)
                                    userInfo:nil
