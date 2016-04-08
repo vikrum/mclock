@@ -19,7 +19,7 @@
         [[NSUserDefaults standardUserDefaults] registerDefaults:    
          [NSDictionary dictionaryWithObjectsAndKeys:     
           @"UTC", kZoneString,     
-          @"HH:mm:ss", kDisplayFormatString,
+          @"EEE MMM d  HH:mm:ss", kDisplayFormatString,
           [NSNumber numberWithBool:1], kDisplayZonePrefix,
           kDisplayZoneNone, kDisplayZoneByNameOptionSelected,
           nil]];
