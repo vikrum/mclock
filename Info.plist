@@ -6,8 +6,6 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>mclock</string>
-	<key>CFBundleIconFile</key>
-	<string>mclock</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.palaniraja.mclock</string>
 	<key>CFBundleInfoDictionaryVersion</key>

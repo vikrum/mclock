@@ -5,10 +5,9 @@ APP = build/mclock.app
 app:
 	swift build -c release
 	rm -rf $(APP)
-	mkdir -p $(APP)/Contents/MacOS $(APP)/Contents/Resources
+	mkdir -p $(APP)/Contents/MacOS
 	cp .build/release/mclock $(APP)/Contents/MacOS/
 	cp Info.plist $(APP)/Contents/
-	cp mclock.icns $(APP)/Contents/Resources/
 	codesign --force --sign - $(APP)
 
 install: app
