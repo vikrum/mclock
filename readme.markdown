@@ -1,15 +1,17 @@
 #mclock   
 
-Additional menu clock for your Mac. A minimalist clock to display time of different timezone of your choice.   
-
-Power to you.
-
-[Download app](https://github.com/palaniraja/mclock/raw/master/binary/mclock.zip)  
-
+A minimalist menu bar clock for your Mac that shows the time in UTC, e.g. `UTC Wed Nov 11  20:51:07`.
 
 ![mclock in action](https://github.com/palaniraja/mclock/raw/master/screenshots/mclock-in-action.png "mclock in action")
 
-![Preferences](https://github.com/palaniraja/mclock/raw/master/screenshots/preferences.png "Preferences")
+## Build
+
+Requires macOS 26.6+ and a Swift toolchain (Xcode or the Command Line Tools).
+
+    make app        # builds build/mclock.app
+    make install    # copies it to ~/Applications
+
+The time zone and format are hardcoded in `Sources/mclock/main.swift`.
 
 ***
 ###License
